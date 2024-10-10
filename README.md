@@ -7,6 +7,7 @@ Dovrà offrire due metodi :
 - boolean hasAncoraElementi() (che deve restituire true se ci sono ancora elementi da restituire)\
 
 La classe deve avere un costruttore che prende come parametro un array di interi (che sarà l’elenco che viene gestito internamente)
-Internamente alla classe vogliamo mantenere l’elenco di interi come array, no ArrayList o simili.
+Internamente alla classe vogliamo mantenere l’elenco di interi come array, no ArrayList o simili.\
+
 Bonus :
-prevedere anche un costruttore che non prenda parametri e un metodo addElemento che permetta di aggiungere un nuovo intero all’elenco da ciclare.
+ - prevedere anche un costruttore che non prenda parametri e un metodo addElemento che permetta di aggiungere un nuovo intero all’elenco da ciclare.
