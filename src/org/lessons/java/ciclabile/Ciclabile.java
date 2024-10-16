@@ -18,18 +18,16 @@ public class Ciclabile {
   }
 
   public boolean hasAncoraElementi() {
-    if (indice < array.length) {
-      return true;
-    }
-    return false;
+    return indice < array.length ? true : false;
   }
 
-  public int getElementoSuccessivo() {
+  public int getElementoSuccessivo() throws Exception {
     if (hasAncoraElementi()) {
       indice++;
       return this.array[indice - 1];
+    } else {
+      throw new Exception("Non ci sono elementi successivi");
     }
-    return indice; // necessaria eccezione
   }
 
   public void addElemento(int a) {
@@ -38,7 +36,7 @@ public class Ciclabile {
       arrayTemp[i] = this.array[i];
     }
     arrayTemp[arrayTemp.length - 1] = a;
-    this.array = new int[arrayTemp.length];
+    this.array = new int[arrayTemp.length + 10];
     for (int i = 0; i < arrayTemp.length; i++) {
       this.array[i] = arrayTemp[i];
     }

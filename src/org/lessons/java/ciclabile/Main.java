@@ -8,14 +8,21 @@ public class Main {
     Ciclabile arrayCiclabile = new Ciclabile(array);
 
     System.out.println(arrayCiclabile.hasAncoraElementi());
-    System.out.println(arrayCiclabile.getElementoSuccessivo());
-    System.out.println(arrayCiclabile.getElementoSuccessivo());
-    System.out.println(arrayCiclabile.getElementoSuccessivo());
-    System.out.println(arrayCiclabile.getElementoSuccessivo());
-    System.out.println(arrayCiclabile.hasAncoraElementi());
-    System.out.println(arrayCiclabile.getElementoSuccessivo());
-    System.out.println(arrayCiclabile.hasAncoraElementi());
+    try {
+      System.out.println(arrayCiclabile.getElementoSuccessivo());
+      System.out.println(arrayCiclabile.getElementoSuccessivo());
+      System.out.println(arrayCiclabile.getElementoSuccessivo());
+      System.out.println(arrayCiclabile.getElementoSuccessivo());
 
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+    }
+    System.out.println(arrayCiclabile.hasAncoraElementi());
+    try {
+      System.out.println(arrayCiclabile.getElementoSuccessivo());
+    } catch (Exception e) {
+      System.err.println(e.getMessage());
+    }
+    System.out.println(arrayCiclabile.hasAncoraElementi());
   }
-
 }
